@@ -1,16 +1,104 @@
-# React + Vite
+# 💎 Diva Jewellery – E-commerce Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Diva Jewellery is a modern, responsive e-commerce frontend web application built using React.js and Vite. The project is designed to provide a smooth and visually appealing shopping experience for jewellery products with a clean UI, reusable components, and optimized performance.
 
-Currently, two official plugins are available:
+This project demonstrates frontend development skills including component-based architecture, responsive design, and deployment using Netlify.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Project Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Diva Jewellery is designed as a user-friendly online jewellery store interface. It showcases products in an elegant layout with smooth navigation between sections such as home, product listings, and featured items.
 
-## Expanding the ESLint configuration
+The application focuses on simplicity, responsiveness, and performance optimization, making it suitable for both desktop and mobile users.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Features
+
+- ⚛️ Built with React.js + Vite for fast performance
+- 📱 Fully responsive design (mobile, tablet, desktop)
+- 🧩 Reusable components for clean code structure
+- 🎨 Modern and elegant UI design
+- ⚡ Optimized build using Vite
+- 🌐 Deployed on Netlify
+- 🖼️ Organized folder structure
+- 🔄 Smooth navigation between sections
+
+---
+
+## 🛠️ Tech Stack
+
+- React.js
+- Vite
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+
+---
+
+## 📁 Project Structure
+
+src/
+ ├── components/
+ │    ├── Hero.jsx
+ │    ├── Navbar.jsx
+ │    ├── Hero.css
+ │    └── Navbar.css
+ ├── App.jsx
+ ├── main.jsx
+ └── index.css
+
+---
+
+## 🌐 Live Demo
+
+https://diva-jewellery.netlify.app/
+
+---
+
+## ⚙️ Installation & Setup
+
+Clone the repository:
+
+git clone https://github.com/animolanu/diva-jewellery.git
+
+Go to project folder:
+
+cd diva-jewellery
+
+Install dependencies:
+
+npm install
+
+Run development server:
+
+npm run dev
+
+Build for production:
+
+npm run build
+
+---
+
+## 🚀 Deployment
+
+This project is deployed using Netlify.
+
+Build command:
+npm run build
+
+Publish directory:
+dist
+
+---
+
+## 👩‍💻 Author
+
+Animol Anilkumar  
+GitHub: https://github.com/animolanu  
+
+---
+
+## 📜 License
+This project is for educational and portfolio purposes.
