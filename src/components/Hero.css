@@ -1,0 +1,915 @@
+/* =====================================================
+   GOOGLE FONT
+===================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap');
+
+
+/* =====================================================
+   HERO SECTION
+===================================================== */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("/images/bg.png") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  pointer-events: none;
+}
+
+.hero-content h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 80px;
+  letter-spacing: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+
+/* =====================================================
+   FLOATING DIAMONDS ANIMATION LAYER
+===================================================== */
+.diamond-layer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  pointer-events: none;
+  width: 0;
+  height: 0;
+}
+
+.center-img,
+.side-img {
+  position: absolute;
+  object-fit: contain;
+  transform-origin: center;
+  top: 0;
+  left: 0;
+  translate: -50% -50%;
+  will-change: transform;
+}
+
+.center-img {
+  width: 620px;
+  height: auto;
+}
+
+.side-img {
+  width: 220px;
+  opacity: 0.9;
+}
+
+.side-img:first-child {
+  margin-left: -420px;
+}
+
+.side-img:last-child {
+  margin-left: 420px;
+}
+
+
+/* =====================================================
+   SECTION 1 (ABOUT / INTRO)
+===================================================== */
+.section1 {
+  width: 100%;
+  min-height: 100vh;
+  background: #2b030e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 8%;
+  position: relative;
+  z-index: 1;
+}
+
+.section1-container {
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.section1-left img {
+  width: 550px;
+  max-width: 100%;
+}
+
+.section1-right {
+  color: #fff;
+  max-width: 600px;
+}
+
+.section1-right h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  margin-bottom: 25px;
+}
+
+.section1-right p {
+  font-size: 19px;
+  line-height: 1.8;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+
+/* =====================================================
+   BUTTON STYLE (GLOBAL LUXURY BUTTON)
+===================================================== */
+.luxury-btn {
+  padding: 14px 40px;
+  background: transparent;
+  border: 1px solid #b48a5a;
+  color: #b48a5a;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.luxury-btn:hover {
+  background: #b48a5a;
+  color: #000;
+}
+
+
+/* =====================================================
+   SECTION 2 (PROMO / HERO CONTENT)
+===================================================== */
+.section2 {
+  width: 100%;
+  min-height: 100vh;
+  background: #2b030e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 8%;
+  text-align: center;
+}
+
+.section2-container {
+  max-width: 900px;
+  color: #f1f5f2;
+}
+
+.section2 h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 52px;
+  margin-bottom: 25px;
+}
+
+.section2 p {
+  font-size: 17px;
+  line-height: 1.9;
+  color: #fff1f2;
+  margin-bottom: 40px;
+}
+
+.section2 img {
+  width: 720px;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto 40px auto;
+}
+.section2-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+/* =====================================================
+   login
+===================================================== */
+.auth-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #faf7f2;
+}
+
+.auth-box {
+  width: 320px;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.auth-box input {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.auth-box button {
+  width: 100%;
+  padding: 10px;
+  background: #b48a5a;
+  color: white;
+  border: none;
+  margin-top: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.auth-box p {
+  margin-top: 10px;
+  color: #b48a5a;
+  cursor: pointer;
+}
+/* =====================================================
+   RINGS COLLECTION PAGE
+===================================================== */
+.rings-section {
+  width: 100%;
+  min-height: 100vh;
+  background: #faf7f2;
+  padding: 100px 8%;
+  text-align: center;
+}
+
+.rings-container h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 52px;
+  color: #b48a5a;
+  margin-bottom: 20px;
+}
+
+.rings-container p {
+  max-width: 700px;
+  margin: auto;
+  color: #666;
+  font-size: 18px;
+}
+
+.rings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.ring-card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.ring-card:hover {
+  transform: translateY(-10px);
+}
+
+.ring-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.ring-card h3 {
+  font-family: "Playfair Display", serif;
+  margin-top: 20px;
+}
+
+.ring-card p {
+  color: #b48a5a;
+  font-weight: bold;
+}
+
+
+/* =====================================================
+   COLLECTION PAGE (USED IN RINGS.JSX)
+===================================================== */
+.collection-page {
+  min-height: 100vh;
+  background: #faf7f2;
+  padding: 180px 8% 100px;
+  text-align: center;
+}
+
+.collection-page h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 56px;
+  color: #b48a5a;
+  margin-bottom: 20px;
+}
+
+.collection-page > p {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.collection-card p {
+  margin: 5px 0;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.new-price {
+  color: #b48a5a;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.discount {
+  color: green;
+  font-weight: bold;
+}
+
+.collection-card:hover {
+  transform: translateY(-10px);
+}
+
+.collection-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.collection-card h3 {
+  font-family: "Playfair Display", serif;
+}
+
+.collection-card p {
+  color: #b48a5a;
+  font-weight: bold;
+}
+
+
+/* =====================================================
+   POPUP MODAL (LOADING + QR)
+===================================================== */
+/* =====================================================
+   POPUP MODAL (LOADING + QR)
+===================================================== */
+
+/* =====================================================
+   POPUP MODAL (LOADING + QR)
+===================================================== */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.popup-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  width: 240px;
+  max-width: 90%;
+}
+
+.popup-box img {
+  width: 160px;
+  height: 160px;
+  max-width: 160px;
+  max-height: 160px;
+  object-fit: contain;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+/* =====================================================
+   CHECKOUT PAGE (LUXURY UI UPGRADE)
+===================================================== */
+
+.checkout-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #faf7f2, #f3eee7);
+  padding: 120px 8%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.checkout-page h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 42px;
+  color: #b48a5a;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+.checkout-box {
+  width: 100%;
+  max-width: 520px;
+  background: #fff;
+  padding: 35px;
+  border-radius: 25px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.checkout-box:hover {
+  transform: translateY(-5px);
+}
+
+.checkout-box h2 {
+  font-family: "Playfair Display", serif;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.checkout-box h3 {
+  color: #b48a5a;
+  font-size: 22px;
+  margin-top: 15px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin: 14px 0;
+  font-size: 16px;
+  color: #444;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0e8dd;
+}
+
+.modern-form {
+  max-width: 520px;
+  margin: auto;
+}
+
+.form-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-grid input {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #e0d6c8;
+  outline: none;
+  transition: 0.2s;
+  font-size: 14px;
+}
+
+.form-grid input:focus {
+  border-color: #b48a5a;
+  box-shadow: 0 0 8px rgba(180,138,90,0.2);
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.row input {
+  flex: 1;
+}
+
+.disclaimer {
+  font-size: 12px;
+  color: #777;
+  margin-top: 5px;
+  line-height: 1.4;
+}
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.pay-btn {
+  width: 100%;
+  margin-top: 25px;
+  padding: 14px;
+  border: none;
+  background: linear-gradient(135deg, #b48a5a, #d4af37);
+  color: white;
+  font-size: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.pay-btn:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(180, 138, 90, 0.3);
+}
+
+
+/* =====================================================
+   payment success
+===================================================== */
+
+/* SUCCESS PAGE */
+.success-page {
+  min-height: 100vh;
+  background: #faf7f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.success-box {
+  padding: 40px;
+}
+
+.success-box h1 {
+  font-family: "Playfair Display", serif;
+  color: #b48a5a;
+  font-size: 40px;
+}
+
+.success-box p {
+  margin: 10px 0 20px;
+  color: #555;
+}
+
+.success-img {
+  width: 200px;
+  margin: 20px 0;
+}
+
+
+/* =====================================================
+   checkout
+===================================================== */
+
+/* =====================================================
+   CART PAGE
+===================================================== */
+
+.cart-page {
+  min-height: 100vh;
+  background: #faf7f2;
+  padding: 120px 8%;
+}
+
+.cart-title {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  color: #b48a5a;
+  margin-bottom: 40px;
+}
+
+.cart-box {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-item h3 {
+  margin: 0;
+  color: #222;
+}
+
+.cart-item p {
+  margin: 5px 0;
+  color: #b48a5a;
+  font-weight: bold;
+}
+
+.remove-btn {
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  opacity: 0.9;
+}
+
+.cart-total {
+  margin-top: 30px;
+  text-align: right;
+  font-size: 24px;
+  font-weight: bold;
+  color: #b48a5a;
+}
+
+.empty-cart {
+  text-align: center;
+  color: #777;
+  font-size: 20px;
+}
+/* =====================================================
+   ACCOUNT PAGE
+===================================================== */
+
+.account-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #faf7f2, #f3eee7);
+  padding: 120px 8%;
+}
+
+.account-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.account-box,
+.help-box {
+  background: #fff;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.account-box:hover,
+.help-box:hover {
+  transform: translateY(-5px);
+}
+
+.account-box h2,
+.help-box h2 {
+  text-align: center;
+  color: #b48a5a;
+  margin-bottom: 25px;
+  font-family: "Playfair Display", serif;
+}
+
+/* PROFILE CIRCLE */
+
+.profile-circle {
+  width: 90px;
+  height: 90px;
+  margin: auto;
+  margin-bottom: 25px;
+  border-radius: 50%;
+  background: linear-gradient(135deg,#b48a5a,#d4af37);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+/* INPUTS */
+
+.account-box input,
+.account-box textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  outline: none;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.account-box input:focus,
+.account-box textarea:focus {
+  border-color: #b48a5a;
+  box-shadow: 0 0 10px rgba(180,138,90,0.15);
+}
+
+/* BUTTON */
+
+.account-btn,
+.help-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg,#b48a5a,#d4af37);
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.account-btn:hover,
+.help-btn:hover {
+  transform: scale(1.02);
+}
+
+/* =====================================================
+   HELP CENTER
+===================================================== */
+
+.help-item {
+  background: #faf7f2;
+  padding: 18px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  border-left: 4px solid #b48a5a;
+}
+
+.help-item h4 {
+  color: #b48a5a;
+  margin-bottom: 8px;
+}
+
+.help-item p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* FAQ */
+
+.faq {
+  margin-top: 30px;
+}
+
+.faq h3 {
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.faq-item {
+  background: #faf7f2;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.faq-item strong {
+  display: block;
+  color: #b48a5a;
+  margin-bottom: 5px;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .account-container {
+    grid-template-columns: 1fr;
+  }
+
+  .account-box,
+  .help-box {
+    padding: 25px;
+  }
+}
+/* =========================
+   GET IT PAGE
+========================= */
+
+.getit-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #faf7f2, #f3eee7);
+  padding: 140px 8% 80px;
+  text-align: center;
+}
+
+.getit-page h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 60px;
+  color: #b48a5a;
+  margin-bottom: 20px;
+}
+
+.getit-page p {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 60px;
+}
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+}
+
+.collection-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+  transition: 0.4s;
+  padding-bottom: 25px;
+}
+
+.collection-card:hover {
+  transform: translateY(-10px);
+}
+
+.collection-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.collection-card h3 {
+  margin: 20px 0;
+  font-size: 28px;
+  font-family: "Playfair Display", serif;
+  color: #222;
+}
+
+/* CONTACT PAGE */
+
+.contact-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a0005, #3d0010);
+  padding: 140px 8%;
+  text-align: center;
+}
+
+.contact-page h1 {
+  color: #d4af37;
+  font-size: 60px;
+  font-family: "Playfair Display", serif;
+
+  animation: fadeDown 1s ease;
+}
+.contact-page p {
+  color: #f5e6d3;
+}
+
+.contact-box {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 40px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(212,175,55,0.3);
+
+  animation: fadeUp 1s ease;
+  transition: 0.4s ease;
+}
+
+.contact-box:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(212,175,55,0.25);
+}
+
+.contact-box h3 {
+  color: #d4af37;
+  margin-bottom: 20px;
+}
+
+.contact-box p {
+  margin: 15px 0;
+  font-size: 18px;
+  color: #f5e6d3;
+
+  animation: fadeIn 1.5s ease;
+}
